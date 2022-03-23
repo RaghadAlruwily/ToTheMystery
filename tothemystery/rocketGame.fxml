@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="pane" prefHeight="660.0" prefWidth="900.0" styleClass="mainFxmlClass" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tothemystery.RocketGameController">
+   <children>
+      <ImageView fx:id="plan1" fitHeight="100.0" fitWidth="100.0" layoutX="65.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/pngegg(17).png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="heart3" fitHeight="50.0" fitWidth="32.0" layoutX="26.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/heart.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="hear2" fitHeight="50.0" fitWidth="32.0" layoutX="62.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/heart.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="heart1" fitHeight="50.0" fitWidth="32.0" layoutX="98.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/heart.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="plant3" fitHeight="100.0" fitWidth="100.0" layoutX="681.0" layoutY="341.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/pngegg(22).png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="plant6" fitHeight="100.0" fitWidth="100.0" layoutX="566.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/pngegg(13).png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="plant5" fitHeight="100.0" fitWidth="100.0" layoutX="450.0" layoutY="500.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/pngegg(29).png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="plant4" disable="true" fitHeight="100.0" fitWidth="100.0" layoutX="151.0" layoutY="380.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/pngegg(15).png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="plant2" fitHeight="100.0" fitWidth="100.0" layoutX="251.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/pngegg(5)_2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="heart4" fitHeight="50.0" fitWidth="32.0" layoutX="135.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/heart.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="heart5" fitHeight="50.0" fitWidth="32.0" layoutX="172.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/heart.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="heart6" fitHeight="50.0" fitWidth="32.0" layoutX="208.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/heart.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="heart7" fitHeight="50.0" fitWidth="32.0" layoutX="245.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/heart.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="roc" fitHeight="100.0" fitWidth="100.0" focusTraversable="true" layoutX="379.0" layoutY="373.0" onKeyPressed="#rocketMovement" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/pngegg(28).png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="star" fitHeight="40.0" fitWidth="37.0" layoutX="681.0" layoutY="-47.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/star-2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="star1" fitHeight="40.0" fitWidth="37.0" layoutX="301.0" layoutY="-76.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/star-2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="star2" fitHeight="40.0" fitWidth="37.0" layoutX="744.0" layoutY="-57.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/star-2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="star3" fitHeight="40.0" fitWidth="37.0" layoutX="96.0" layoutY="-76.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/star-2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="star4" fitHeight="40.0" fitWidth="37.0" layoutX="233.0" layoutY="-75.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/star-2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="star5" fitHeight="40.0" fitWidth="37.0" layoutX="579.0" layoutY="-76.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/star-2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="star6" fitHeight="40.0" fitWidth="37.0" layoutX="396.0" layoutY="-57.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/star-2.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="winPane" layoutX="211.0" layoutY="11.0" prefHeight="578.0" prefWidth="478.0" visible="false">
+         <children>
+            <ImageView fx:id="astro" fitHeight="610.0" fitWidth="471.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/as.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="wonText" fill="#0a0900" layoutX="70.0" layoutY="528.0" stroke="#8a8a8a" strokeType="OUTSIDE" strokeWidth="2.0" text="You Win !">
+               <font>
+                  <Font name="Showcard Gothic" size="68.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="score2" fitHeight="100.0" fitWidth="100.0" layoutX="184.0" layoutY="312.0" opacity="0.1" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/star(1).png" />
+               </image>
+               <effect>
+                  <Lighting specularConstant="0.68" specularExponent="18.54" surfaceScale="5.98">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     
+                  </Lighting>
+               </effect></ImageView>
+            <ImageView fx:id="score3" fitHeight="86.0" fitWidth="85.0" layoutX="284.0" layoutY="370.0" opacity="0.1" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/star(1).png" />
+               </image>
+               <effect>
+                  <Lighting specularConstant="0.68" specularExponent="18.54" surfaceScale="5.98">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        
+                     </light>
+                  </Lighting>
+               </effect></ImageView>
+            <ImageView fx:id="score1" fitHeight="86.0" fitWidth="85.0" layoutX="99.0" layoutY="370.0" opacity="0.1" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/star(1).png" />
+               </image>
+               <effect>
+                  <Lighting specularConstant="0.68" specularExponent="18.54" surfaceScale="5.98">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        
+                     </light>
+                  </Lighting>
+               </effect></ImageView>
+            <ImageView fx:id="win1" fitHeight="86.0" fitWidth="85.0" layoutX="99.0" layoutY="370.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../image/star(2).png" />
+               </image>
+               <effect>
+                  <Lighting diffuseConstant="1.27" specularConstant="0.74" specularExponent="31.71" surfaceScale="0.89">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                      
+                     </light>
+                  </Lighting>
+               </effect>
+            </ImageView>
+            <ImageView fx:id="win2" fitHeight="100.0" fitWidth="100.0" layoutX="184.0" layoutY="312.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../image/star(2).png" />
+               </image>
+               <effect>
+                  <Lighting diffuseConstant="1.27" specularConstant="0.74" specularExponent="31.71" surfaceScale="0.89">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                      
+                     </light>
+                  </Lighting>
+               </effect>
+            </ImageView>
+            <ImageView fx:id="win3" fitHeight="86.0" fitWidth="85.0" layoutX="284.0" layoutY="370.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../image/star(2).png" />
+               </image>
+               <effect>
+                  <Lighting diffuseConstant="1.27" specularConstant="0.74" specularExponent="31.71" surfaceScale="0.89">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        
+                     </light>
+                  </Lighting>
+               </effect>
+            </ImageView>
+            <ImageView fx:id="nextButton" fitHeight="118.0" fitWidth="200.0" layoutX="166.0" layoutY="519.0" onMouseClicked="#goToMenu"  pickOnBounds="true" preserveRatio="true" rotate="45.0">
+               <image>
+                  <Image url="@../image/rocet.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

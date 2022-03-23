@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#keyPressed" prefHeight="660.0" prefWidth="900.0" styleClass="backg" stylesheets="@ss.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tothemystery.Uranus">
+   <children>
+      <ImageView fx:id="hero" fitHeight="83.0" fitWidth="70.0" focusTraversable="true" layoutX="10.0" layoutY="555.0" onKeyPressed="#keyPressed" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/astronaut-6.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="weaponimage" fitHeight="150.0" fitWidth="200.0" layoutX="278.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true" />
+      <Text fx:id="scoreText" fill="#cbd074" layoutX="10.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SCORE :" wrappingWidth="140.00714644789696">
+         <font>
+            <Font name="Copperplate Gothic Light" size="28.0" />
+         </font></Text>
+      <Text fx:id="liveText" fill="#d1d7a0" layoutX="495.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LIVES:" wrappingWidth="106.0">
+         <font>
+            <Font name="Copperplate Gothic Light" size="28.0" />
+         </font></Text>
+      <ImageView fx:id="ss2" fitHeight="150.0" fitWidth="200.0" layoutX="236.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="l1" fitHeight="34.0" fitWidth="41.0" layoutX="651.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/space-ship.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="l2" fitHeight="41.0" fitWidth="34.0" layoutX="605.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/space-ship.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="l3" fitHeight="51.0" fitWidth="34.0" layoutX="120.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../image/stars-2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="l4" fitHeight="34.0" fitWidth="40.0" layoutX="170.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../image/stars-2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="l5" fitHeight="34.0" fitWidth="34.0" layoutX="226.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../image/stars-2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="l6" fitHeight="33.0" fitWidth="42.0" layoutX="278.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../image/stars-2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="l0" fitHeight="48.0" fitWidth="34.0" layoutX="696.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/space-ship.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="test" fitHeight="529.0" fitWidth="445.0" layoutX="227.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../image/as.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="textwin" fill="#6f8d4d" layoutX="308.0" layoutY="548.0" strokeType="OUTSIDE" strokeWidth="0.0" text="YOU WIN !" visible="false" wrappingWidth="404.974609375">
+         <font>
+            <Font name="Arial Black" size="46.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="92.0" fitWidth="77.0" layoutX="404.0" layoutY="383.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../image/stars-fall.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="493.0" layoutY="432.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../image/stars-fall.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="rocketwin" fitHeight="114.0" fitWidth="112.0" layoutX="395.0" layoutY="547.0" pickOnBounds="true" preserveRatio="true" rotate="43.3" visible="false">
+         <image>
+            <Image url="@../image/rocet.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="staryello" fitHeight="108.0" fitWidth="92.0" layoutX="390.0" layoutY="368.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../image/star(2).png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="staryello2" fitHeight="104.0" fitWidth="92.0" layoutX="291.0" layoutY="414.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../image/star(2).png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="staryello3" fitHeight="107.0" fitWidth="92.0" layoutX="482.0" layoutY="414.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../image/star(2).png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="rocketback" fitHeight="108.0" fitWidth="106.0" layoutX="401.0" layoutY="553.0" pickOnBounds="true" preserveRatio="true" rotate="-135.0" visible="false">
+         <image>
+            <Image url="@../image/rocet.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="textlose" fill="#dd5959" layoutX="319.0" layoutY="522.0" strokeType="OUTSIDE" strokeWidth="0.0" text="YOU LOSE" visible="false">
+         <font>
+            <Font name="Arial Black" size="43.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="l7" fitHeight="34.0" fitWidth="34.0" layoutX="337.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../image/stars-2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="l8" fitHeight="34.0" fitWidth="34.0" layoutX="390.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../image/stars-2.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="back" layoutX="413.0" layoutY="611.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Back" visible="false">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="blackstar" fitHeight="99.0" fitWidth="92.0" layoutX="390.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../image/star(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="blackstar2" fitHeight="110.0" fitWidth="92.0" layoutX="291.0" layoutY="392.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../image/star(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="blackstar3" fitHeight="99.0" fitWidth="87.0" layoutX="485.0" layoutY="389.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../image/star(1).png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

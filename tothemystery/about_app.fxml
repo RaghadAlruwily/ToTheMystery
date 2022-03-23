@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="660.0" prefWidth="900.0" styleClass="root" stylesheets="@login.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tothemystery.About_appController">
+   <children>
+      <ImageView fx:id="image" fitHeight="757.0" fitWidth="740.0" layoutX="152.0" layoutY="-126.0" pickOnBounds="true" preserveRatio="true" styleClass="root">
+         <image>
+            <Image url="@../image/instraction.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="text_pane" layoutX="208.0" layoutY="260.0" prefHeight="400.0" prefWidth="505.0">
+         <children>
+            <Text fx:id="text_insraction1" fill="#3e5ba6" layoutX="154.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="About the program" underline="true" wrappingWidth="158.1367753148079">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Text>
+            <Text fx:id="text_insraction" fill="#5c6888" layoutX="45.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text=".‏Our program is a short trip to the vast world.. to space‏We will take you, led by our guides, to learn about some planets and gain information that you may have been missing‏We will also help you distinguish the distant planets from a simple look at them, and we will make you distinguish their unique brightness from the rest of the bright bodies‏We will launch with you to experience and face ‏the unknown" wrappingWidth="424.8034012913704">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Text>
+            <Text fx:id="text_insraction11" fill="#3e5ba6" layoutX="49.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Designed by :" underline="true" wrappingWidth="158.1367753148079">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Text>
+            <Text fx:id="text_insraction12" fill="#5a688b" layoutX="47.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Raghad khalid al-rwuily" wrappingWidth="190.1367753148079">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#424040" />
+               </effect>
+            </Text>
+            <Text fx:id="text_insraction124" fill="#5a688b" layoutX="158.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asma Nasser Alashmori" wrappingWidth="190.1367753148079">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#424040" />
+               </effect>
+            </Text>
+            <Text fx:id="text_insraction122" fill="#5a688b" layoutX="270.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Khulood Nasser Thabt" wrappingWidth="190.1367753148079">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#424040" />
+               </effect>
+            </Text>
+            <Text fx:id="text_insraction123" fill="#5a688b" layoutX="48.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amal Ahmed Alhuthaly" wrappingWidth="190.1367753148079">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#424040" />
+               </effect>
+            </Text>
+            <Text fx:id="text_insraction121" fill="#5a688b" layoutX="272.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Haifa Shaker Al-shareef" wrappingWidth="190.1367753148079">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#424040" />
+               </effect>
+            </Text>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="back" fitHeight="80.0" fitWidth="115.0" layoutX="56.0" layoutY="531.0" onMouseClicked="#nextMove" onMouseEntered="#MouseOnBackn" onMouseExited="#MouseOutBack" opacity="0.96" pickOnBounds="true" preserveRatio="true" rotate="-134.0">
+         <image>
+            <Image url="@../image/rocet.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="root" stylesheets="@login.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tothemystery.SettingController">
+   <children>
+      <AnchorPane layoutX="85.0" layoutY="52.0" prefHeight="306.0" prefWidth="443.0" style="-fx-border-color: #7485ab; -fx-border-width: 3; -fx-border-radius: 20;">
+         <children>
+            <CheckBox fx:id="checkBox_sound" layoutX="85.0" layoutY="228.0" mnemonicParsing="false" onAction="#isSelect" prefHeight="37.0" prefWidth="100.0" styleClass="checkbox" stylesheets="@setting.css" text="Mute" textFill="#7485ab">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </CheckBox>
+            <ImageView fitHeight="37.0" fitWidth="42.0" layoutX="72.0" layoutY="135.0" opacity="0.72" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="72.0">
+               <image>
+                  <Image url="@../image/soud_iqun.png" />
+               </image>
+            </ImageView>
+            <Slider fx:id="slider" layoutX="140.0" layoutY="126.0" prefHeight="56.0" prefWidth="258.0" AnchorPane.leftAnchor="140.0">
+               <stylesheets>
+                  <URL value="@setting.css" />
+                  <URL value="@setting.css" />
+               </stylesheets>
+               <styleClass>
+                  <String fx:value="thumb" />
+                  <String fx:value="track" />
+               </styleClass></Slider>
+            <ImageView fitHeight="37.0" fitWidth="42.0" layoutX="34.0" layoutY="228.0" opacity="0.72" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/soud_iqun.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="meut1" layoutX="40.0" layoutY="207.0" rotate="13.0" text="/" textFill="#2d3a66" visible="false">
+               <font>
+                  <Font name="System Bold" size="53.0" />
+               </font>
+            </Label>
+            <Label fx:id="meut2" layoutX="40.0" layoutY="208.0" rotate="-15.9" text="\\" textFill="#2d3a66" visible="false">
+               <font>
+                  <Font name="System Bold" size="53.0" />
+               </font>
+            </Label>
+            <Label layoutX="148.0" layoutY="-16.0" prefHeight="99.0" prefWidth="201.0" style="-fx-border-radius: 20;" text="Setting" textFill="#7485ab">
+               <font>
+                  <Font name="System Bold" size="40.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#8514d0ab" />
+               </effect>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow color="#70787c" />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>

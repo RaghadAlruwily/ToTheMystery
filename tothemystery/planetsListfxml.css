@@ -1,0 +1,10 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-image: url('../image/background-sparkling-stars.jpg');
+    -fx-background-size:cover;
+    
+}
+

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="660.0" prefWidth="900.0" styleClass="root" stylesheets="@login.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tothemystery.InstarctionsController">
+   <children>
+      <ImageView fx:id="image" fitHeight="589.0" fitWidth="510.0" layoutX="210.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="root">
+         <image>
+            <Image url="@../image/instraction.png" />
+         </image>
+      </ImageView>
+      <ScrollPane fx:id="scrol" layoutX="250.0" layoutY="318.0" prefHeight="290.0" prefWidth="384.0" style="-fx-background-color: white; -fx-background-radius: 0;">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="927.0" prefWidth="384.0" style="-fx-background-color: white; -fx-background-radius: 80;">
+               <children>
+                  <Text fx:id="text_insraction" fill="#5c6888" layoutX="16.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You can mute/ unmute the sound and control the level of the sound from the sitting" wrappingWidth="354.13671427965164">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </Text>
+                  <Text fill="#5c6888" layoutX="13.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You have to pass the cursor on a planet and click on it to go to the planet , thus the planet game is begun." wrappingWidth="354.136723279953">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </Text>
+                  <Text fill="#5c6888" layoutX="12.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To defeat the aliens , you must shoot them using space key " wrappingWidth="361.47015380859375">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </Text>
+                  <Text fill="#5c6888" layoutX="11.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="And to avoid aliens from attacking use up, down, left,arrows right" wrappingWidth="369.47016233205795">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </Text>
+                  <Text fill="#5c6888" layoutX="10.0" layoutY="431.0" strokeType="OUTSIDE" strokeWidth="0.0" text="After that click on the paper that appears to you after killing the aliens by click the mouse cursor to read it." wrappingWidth="361.4701509475708">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </Text>
+                  <Text fill="#5c6888" layoutX="15.0" layoutY="521.0" strokeType="OUTSIDE" strokeWidth="0.0" text="For the rocket :" wrappingWidth="204.803466796875">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Text>
+                  <Text fill="#5c6888" layoutX="14.0" layoutY="557.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You have the disassembled rocket parts that you must arrange on the diagram shown to you in the correct order by dragging the part to be installed." wrappingWidth="361.4701509475708">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </Text>
+                  <Text fill="#5c6888" layoutX="15.0" layoutY="668.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In the rocket game to start move the rocket right,left,up and down use the arrows and to win in this game you must collect all stars and be careful from obstacles" wrappingWidth="311.47003626823425">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </Text>
+                  <ImageView fitHeight="23.0" fitWidth="28.0" layoutX="314.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/setting.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#5c6888" layoutX="16.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="For the planets :" wrappingWidth="204.803466796875">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Text>
+                  <ImageView fitHeight="45.0" fitWidth="54.0" layoutX="151.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                     <image>
+                        <Image url="@../image/arows.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="45.0" fitWidth="54.0" layoutX="311.0" layoutY="657.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                     <image>
+                        <Image url="@../image/arows.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="text_insraction1" fill="#3e5ba6" layoutX="73.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Instarctions of the application : " underline="true" wrappingWidth="241.4701493382454">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Text>
+                  <ImageView fitHeight="38.0" fitWidth="52.0" layoutX="141.0" layoutY="358.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/space_button.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#5c6888" layoutX="14.0" layoutY="797.0" strokeType="OUTSIDE" strokeWidth="0.0" text="For telescope :" wrappingWidth="204.803466796875">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Text>
+                  <Text fill="#5c6888" layoutX="10.0" layoutY="831.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select one shining spot by clicking on it and choose the correct choice of the question." wrappingWidth="361.4701509475708">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ImageView fx:id="back" fitHeight="85.0" fitWidth="85.0" layoutX="53.0" layoutY="543.0" onMouseClicked="#menuScene" onMouseEntered="#MouseOnBackn" onMouseExited="#MouseOutBack" opacity="0.99" pickOnBounds="true" preserveRatio="true" rotate="-135.3">
+         <image>
+            <Image url="@../image/rocet.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

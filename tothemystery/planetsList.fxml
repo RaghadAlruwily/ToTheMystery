@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="900.0" styleClass="mainFxmlClass" stylesheets="@planetsListfxml.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tothemystery.planetsListController">
+   <children>
+      <ImageView fitHeight="556.0" fitWidth="406.0" layoutX="387.0" layoutY="166.0" opacity="0.16" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/pngegg(5).png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="satellite" fitHeight="84.0" fitWidth="95.0" layoutX="90.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/satellite.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="astronaut" fitHeight="129.0" fitWidth="139.0" layoutX="769.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/astronaut.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="rock" fitHeight="94.0" fitWidth="81.0" layoutX="389.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/pngegg(5)_1.png" />
+         </image>
+      </ImageView>
+      <StackPane layoutX="83.0" layoutY="230.0" prefHeight="122.0" prefWidth="118.0">
+         <children>
+            <ImageView fx:id="mars" fitHeight="122.0" fitWidth="118.0" onMouseClicked="#selectMars" onMouseEntered="#mouseOnMars" onMouseExited="#mouseOutMars" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/planet4.png" />
+               </image>
+               <effect>
+                  <Glow />
+               </effect>
+            </ImageView>
+         </children>
+      </StackPane>
+      <StackPane layoutX="310.0" layoutY="320.0" prefHeight="167.0" prefWidth="197.0" rotate="32.9">
+         <children>
+            <ImageView fx:id="saturn" fitHeight="167.0" fitWidth="197.0" onMouseClicked="#selectSaturn" onMouseEntered="#mouseOnSaturn" onMouseExited="#mouseOutSaturn" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/planet3.png" />
+               </image>
+               <effect>
+                  <Glow />
+               </effect>
+            </ImageView>
+         </children>
+      </StackPane>
+      <StackPane layoutX="590.0" layoutY="144.0" prefHeight="167.0" prefWidth="168.0">
+         <children>
+            <ImageView fx:id="uranus" fitHeight="167.0" fitWidth="168.0" onMouseClicked="#selectUranus" onMouseEntered="#mouseOnUranus" onMouseExited="#mouseOutUranus" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/planet1.png" />
+               </image>
+               <effect>
+                  <Glow />
+               </effect>
+            </ImageView>
+         </children>
+      </StackPane>
+      <Pane fx:id="group1" layoutX="155.0" layoutY="430.0" prefHeight="84.0" prefWidth="69.0">
+         <children>
+            <ImageView fitHeight="17.0" fitWidth="11.0" layoutX="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/pngegg(5)_1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="17.0" fitWidth="33.0" layoutX="45.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/pngegg(5)_1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="17.0" fitWidth="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/pngegg(5)_1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="62.0" layoutX="7.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/pngegg(5)_1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="group2" layoutX="628.0" layoutY="381.0" prefHeight="122.0" prefWidth="167.0">
+         <children>
+            <ImageView fitHeight="17.0" fitWidth="21.0" layoutX="53.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/pngegg(5)_1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="75.0" fitWidth="66.0" layoutX="66.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/pngegg(5)_1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="17.0" fitWidth="33.0" layoutX="146.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/pngegg(5)_1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="17.0" fitWidth="11.0" layoutX="145.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/pngegg(5)_1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="10.0" fitWidth="18.0" layoutX="131.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/pngegg(5)_1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="bubblePane" layoutX="628.0" layoutY="-20.0" prefHeight="110.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="bubble" fitHeight="150.0" fitWidth="200.0" layoutX="43.0" layoutY="10.0" opacity="0.89" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/bubbleChat4.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="73.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Let's Go ?!" wrappingWidth="101.6708984375">
+               <font>
+                  <Font name="Eras Light ITC" size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane fx:id="backPane" layoutX="14.0" layoutY="545.0" onMouseClicked="#backToMenu" onMouseEntered="#mouseOnButton" onMouseExited="#mouseOutButton" prefHeight="84.0" prefWidth="118.0">
+         <children>
+            <ImageView fitHeight="75.0" fitWidth="69.0" layoutX="47.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" rotate="-135.0">
+               <image>
+                  <Image url="@../image/rocet.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</Pane>

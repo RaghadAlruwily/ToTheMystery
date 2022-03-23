@@ -1,0 +1,15 @@
+.slider .track{
+    -fx-background-color: linear-gradient(to left,blueviolet,cornflowerblue);
+    -fx-pref-height:15px;
+}
+.slider .thumb{
+    -fx-pref-height: 30px;
+    -fx-pref-width: 10;
+    -fx-background-color: lightsteelblue;
+
+}
+.checkbox .box{
+    -fx-background-color: lightsteelblue;
+    -fx-background-radius: 6,6,6,6,6;
+}
+ 

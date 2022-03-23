@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="telescope_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" styleClass="root" stylesheets="@background.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tothemystery.teleController">
+   <children>
+      <Circle fx:id="planet1" layoutX="662.0" layoutY="194.0" onMouseClicked="#MouseClicPlanet1" onMouseEntered="#MouseOnPlant1" onMouseExited="#MouseOutPlant1" radius="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="0.22815533980582525" startY="0.4029126213592233">
+               <stops>
+                  <Stop color="#aeb6dac2" />
+                  <Stop color="#1427d7" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Circle>
+      <Circle fx:id="planet2" layoutX="371.0" layoutY="422.0" onMouseClicked="#MouseClicPlanet2" onMouseEntered="#MouseOnPlant2" onMouseExited="#MouseOutPlant2" radius="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+         <fill>
+            <LinearGradient endY="1.0" startX="0.7718446601941749" startY="0.4174757281553398">
+               <stops>
+                  <Stop color="#e3d681" />
+                  <Stop color="#626f7ac0" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Circle>
+      <Circle fx:id="planet3" layoutX="501.0" layoutY="384.0" onMouseClicked="#MouseClicPlanet3" onMouseEntered="#MouseOnPlant3" onMouseExited="#MouseOutPlant3" radius="2.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="0.10194174757281553" endY="0.8786407766990292" startX="0.8300970873786409" startY="0.6844660194174758">
+               <stops>
+                  <Stop color="#a14c23" />
+                  <Stop color="#626f7ac0" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Circle>
+      <Circle fx:id="planet4" layoutX="132.0" layoutY="382.0" onMouseClicked="#MouseClicPlanet4" onMouseEntered="#MouseOnPlant4" onMouseExited="#MouseOutPlant4" radius="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="0.2766990291262136" startX="0.441747572815534" startY="0.4029126213592233">
+               <stops>
+                  <Stop color="#f83b3b" />
+                  <Stop color="#9c6954ae" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Circle>
+      <Circle fx:id="planet5" layoutX="772.0" layoutY="350.0" onMouseClicked="#MouseClicPlanet5" onMouseEntered="#MouseOnPlant5" onMouseExited="#MouseOutPlant5" radius="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+         <fill>
+            <LinearGradient endX="0.9368932038834952" endY="0.9466019417475728" startX="1.0" startY="0.09708737864077671">
+               <stops>
+                  <Stop color="#b2bbc3" />
+                  <Stop color="#171717" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Circle>
+      <Circle fx:id="star1" layoutX="263.0" layoutY="451.0" onMouseClicked="#MouseClicStar1" onMouseEntered="#MouseOnStar1" onMouseExited="#MouseOutStar1" radius="2.0" strokeType="INSIDE" strokeWidth="0.0">
+         <stroke>
+            <RadialGradient centerX="0.5056818181818182" centerY="0.5" cycleMethod="REPEAT" focusAngle="-171.25" radius="0.426829268292683">
+               <stops>
+                  <Stop color="#fffbfb" />
+                  <Stop color="#bc9494" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </stroke>
+         <fill>
+            <RadialGradient centerX="0.5170454545454546" centerY="0.48058252427184467" cycleMethod="REFLECT" focusAngle="-171.25" focusDistance="-0.024390243902439046" radius="0.3902439024390244">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="#ba9393f9" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Circle>
+      <Circle fx:id="star2" layoutX="351.0" layoutY="183.0" onMouseClicked="#MouseClicStar2" onMouseEntered="#MouseOnStar2" onMouseExited="#MouseOutStar2" radius="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+         <fill>
+            <RadialGradient centerX="0.5056818181818182" centerY="0.49029126213592233" cycleMethod="REFLECT" focusAngle="-171.25" radius="0.5975609756097562">
+               <stops>
+                  <Stop color="#fffbfb" />
+                  <Stop color="#96878b5a" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Circle>
+      <Circle fx:id="star3" layoutX="536.0" layoutY="101.0" onMouseClicked="#MouseClicStar3" onMouseEntered="#MouseOnStar3" onMouseExited="#MouseOutStar3" radius="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.48058252427184467" focusAngle="-171.25" focusDistance="-0.024390243902439046" radius="0.3902439024390244">
+               <stops>
+                  <Stop color="#e3d681" />
+                  <Stop color="#96878be1" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Circle>
+      <Circle fx:id="star4" layoutX="586.0" layoutY="440.0" onMouseClicked="#MouseClicStar4" onMouseEntered="#MouseOnStar4" onMouseExited="#MouseOutStar4" radius="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.48058252427184467" focusAngle="-171.25" focusDistance="-0.024390243902439046" radius="0.3902439024390244">
+               <stops>
+                  <Stop color="#e3d681" />
+                  <Stop color="#626f7ac0" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Circle>
+      <Circle fx:id="star5" layoutX="223.0" layoutY="115.0" onMouseClicked="#MouseClicStar5" onMouseEntered="#MouseOnStar5" onMouseExited="#MouseOutStar5" radius="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+         <fill>
+            <RadialGradient centerX="0.47727272727272735" centerY="0.49029126213592233" focusAngle="-171.25" radius="0.524390243902439">
+               <stops>
+                  <Stop color="#f70000" />
+                  <Stop color="#c9a048" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Circle>
+      <AnchorPane fx:id="telescope_pane1" prefHeight="600.0" prefWidth="900.0" styleClass="root" stylesheets="@background.css" visible="false">
+         <children>
+            <Circle fx:id="planet11" layoutX="369.0" layoutY="227.0" onMouseClicked="#MouseClicPlanet11" onMouseEntered="#MouseOnPlant1" onMouseExited="#MouseOutPlant1" radius="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+               <fill>
+                  <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="0.22815533980582525" startY="0.4029126213592233">
+                     <stops>
+                        <Stop color="#aeb6dac2" />
+                        <Stop color="#1427d7" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+            <Circle fx:id="planet21" layoutX="215.0" layoutY="403.0" onMouseClicked="#MouseClicPlanet22" onMouseEntered="#MouseOnPlant2" onMouseExited="#MouseOutPlant2" radius="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+               <fill>
+                  <LinearGradient endY="1.0" startX="0.7718446601941749" startY="0.4174757281553398">
+                     <stops>
+                        <Stop color="#e3d681" />
+                        <Stop color="#626f7ac0" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+            <Circle fx:id="planet31" layoutX="593.0" layoutY="109.0" onMouseClicked="#MouseClicPlanet33" onMouseEntered="#MouseOnPlant3" onMouseExited="#MouseOutPlant3" radius="2.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="0.10194174757281553" endY="0.8786407766990292" startX="0.8300970873786409" startY="0.6844660194174758">
+                     <stops>
+                        <Stop color="#a14c23" />
+                        <Stop color="#626f7ac0" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+            <Circle fx:id="planet41" layoutX="656.0" layoutY="417.0" onMouseClicked="#MouseClicPlanet44" onMouseEntered="#MouseOnPlant4" onMouseExited="#MouseOutPlant4" radius="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="0.2766990291262136" startX="0.441747572815534" startY="0.4029126213592233">
+                     <stops>
+                        <Stop color="#f83b3b" />
+                        <Stop color="#9c6954ae" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+            <Circle fx:id="planet51" layoutX="472.0" layoutY="149.0" onMouseClicked="#MouseClicPlanet55" onMouseEntered="#MouseOnPlant5" onMouseExited="#MouseOutPlant5" radius="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+               <fill>
+                  <LinearGradient endX="0.9368932038834952" endY="0.9466019417475728" startX="1.0" startY="0.09708737864077671">
+                     <stops>
+                        <Stop color="#b2bbc3" />
+                        <Stop color="#171717" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+            <Circle fx:id="star11" layoutX="307.0" layoutY="63.0" onMouseClicked="#MouseClicStar11" onMouseEntered="#MouseOnStar1" onMouseExited="#MouseOutStar1" radius="2.0" strokeType="INSIDE" strokeWidth="0.0">
+               <stroke>
+                  <RadialGradient centerX="0.5056818181818182" centerY="0.5" cycleMethod="REPEAT" focusAngle="-171.25" radius="0.426829268292683">
+                     <stops>
+                        <Stop color="#fffbfb" />
+                        <Stop color="#bc9494" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </stroke>
+               <fill>
+                  <RadialGradient centerX="0.5170454545454546" centerY="0.48058252427184467" cycleMethod="REFLECT" focusAngle="-171.25" focusDistance="-0.024390243902439046" radius="0.3902439024390244">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="#ba9393f9" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Circle>
+            <Circle fx:id="star21" layoutX="257.0" layoutY="277.0" onMouseClicked="#MouseClicStar22" onMouseEntered="#MouseOnStar2" onMouseExited="#MouseOutStar2" radius="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+               <fill>
+                  <RadialGradient centerX="0.5056818181818182" centerY="0.49029126213592233" cycleMethod="REFLECT" focusAngle="-171.25" radius="0.5975609756097562">
+                     <stops>
+                        <Stop color="#fffbfb" />
+                        <Stop color="#96878b5a" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Circle>
+            <Circle fx:id="star31" layoutX="323.0" layoutY="419.0" onMouseClicked="#MouseClicStar33" onMouseEntered="#MouseOnStar3" onMouseExited="#MouseOutStar3" radius="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+               <fill>
+                  <RadialGradient centerX="0.5" centerY="0.48058252427184467" focusAngle="-171.25" focusDistance="-0.024390243902439046" radius="0.3902439024390244">
+                     <stops>
+                        <Stop color="#e3d681" />
+                        <Stop color="#96878be1" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Circle>
+            <Circle fx:id="star41" layoutX="623.0" layoutY="227.0" onMouseClicked="#MouseClicStar44" onMouseEntered="#MouseOnStar4" onMouseExited="#MouseOutStar4" radius="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+               <fill>
+                  <RadialGradient centerX="0.5" centerY="0.48058252427184467" focusAngle="-171.25" focusDistance="-0.024390243902439046" radius="0.3902439024390244">
+                     <stops>
+                        <Stop color="#e3d681" />
+                        <Stop color="#626f7ac0" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Circle>
+            <Circle fx:id="star51" layoutX="213.0" layoutY="131.0" onMouseClicked="#MouseClicStar55" onMouseEntered="#MouseOnStar5" onMouseExited="#MouseOutStar5" radius="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+               <fill>
+                  <RadialGradient centerX="0.47727272727272735" centerY="0.49029126213592233" focusAngle="-171.25" radius="0.524390243902439">
+                     <stops>
+                        <Stop color="#f70000" />
+                        <Stop color="#c9a048" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Circle>
+            <Label fx:id="msg1" layoutX="270.0" layoutY="229.0" prefHeight="160.0" prefWidth="498.0" textAlignment="CENTER" textFill="#dee6eb" visible="false">
+               <font>
+                  <Font name="System Bold" size="82.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="telescope_pane11" layoutX="-7.0" layoutY="-7.0" prefHeight="614.0" prefWidth="915.0" styleClass="root" stylesheets="@background.css" visible="false">
+         <children>
+            <Circle fx:id="planet111" layoutX="369.0" layoutY="227.0" onMouseClicked="#MouseClicPlanet111" onMouseEntered="#MouseOnPlant1" onMouseExited="#MouseOutPlant1" radius="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+               <fill>
+                  <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="0.22815533980582525" startY="0.4029126213592233">
+                     <stops>
+                        <Stop color="#aeb6dac2" />
+                        <Stop color="#1427d7" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+            <Circle fx:id="planet211" layoutX="119.0" layoutY="379.0" onMouseClicked="#MouseClicPlanet222" onMouseEntered="#MouseOnPlant2" onMouseExited="#MouseOutPlant2" radius="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+               <fill>
+                  <LinearGradient endY="1.0" startX="0.7718446601941749" startY="0.4174757281553398">
+                     <stops>
+                        <Stop color="#e3d681" />
+                        <Stop color="#626f7ac0" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+            <Circle fx:id="planet311" layoutX="593.0" layoutY="109.0" onMouseClicked="#MouseClicPlanet333" onMouseEntered="#MouseOnPlant3" onMouseExited="#MouseOutPlant3" radius="2.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="0.10194174757281553" endY="0.8786407766990292" startX="0.8300970873786409" startY="0.6844660194174758">
+                     <stops>
+                        <Stop color="#a14c23" />
+                        <Stop color="#626f7ac0" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+            <Circle fx:id="planet411" layoutX="656.0" layoutY="417.0" onMouseClicked="#MouseClicPlanet444" onMouseEntered="#MouseOnPlant4" onMouseExited="#MouseOutPlant4" radius="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="0.2766990291262136" startX="0.441747572815534" startY="0.4029126213592233">
+                     <stops>
+                        <Stop color="#f83b3b" />
+                        <Stop color="#9c6954ae" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+            <Circle fx:id="planet511" layoutX="472.0" layoutY="149.0" onMouseClicked="#MouseClicPlanet555" onMouseEntered="#MouseOnPlant5" onMouseExited="#MouseOutPlant5" radius="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+               <fill>
+                  <LinearGradient endX="0.9368932038834952" endY="0.9466019417475728" startX="1.0" startY="0.09708737864077671">
+                     <stops>
+                        <Stop color="#b2bbc3" />
+                        <Stop color="#171717" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+            <Circle fx:id="star111" layoutX="307.0" layoutY="63.0" onMouseClicked="#MouseClicStar111" onMouseEntered="#MouseOnStar1" onMouseExited="#MouseOutStar1" radius="2.0" strokeType="INSIDE" strokeWidth="0.0">
+               <stroke>
+                  <RadialGradient centerX="0.5056818181818182" centerY="0.5" cycleMethod="REPEAT" focusAngle="-171.25" radius="0.426829268292683">
+                     <stops>
+                        <Stop color="#fffbfb" />
+                        <Stop color="#bc9494" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </stroke>
+               <fill>
+                  <RadialGradient centerX="0.5170454545454546" centerY="0.48058252427184467" cycleMethod="REFLECT" focusAngle="-171.25" focusDistance="-0.024390243902439046" radius="0.3902439024390244">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="#ba9393f9" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Circle>
+            <Circle fx:id="star211" layoutX="250.0" layoutY="344.0" onMouseClicked="#MouseClicStar222" onMouseEntered="#MouseOnStar2" onMouseExited="#MouseOutStar2" radius="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+               <fill>
+                  <RadialGradient centerX="0.5056818181818182" centerY="0.49029126213592233" cycleMethod="REFLECT" focusAngle="-171.25" radius="0.5975609756097562">
+                     <stops>
+                        <Stop color="#fffbfb" />
+                        <Stop color="#96878b5a" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Circle>
+            <Circle fx:id="star311" layoutX="323.0" layoutY="419.0" onMouseClicked="#MouseClicStar333" onMouseEntered="#MouseOnStar3" onMouseExited="#MouseOutStar3" radius="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+               <fill>
+                  <RadialGradient centerX="0.5" centerY="0.48058252427184467" focusAngle="-171.25" focusDistance="-0.024390243902439046" radius="0.3902439024390244">
+                     <stops>
+                        <Stop color="#e3d681" />
+                        <Stop color="#96878be1" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Circle>
+            <Circle fx:id="star411" layoutX="623.0" layoutY="227.0" onMouseClicked="#MouseClicStar444" onMouseEntered="#MouseOnStar4" onMouseExited="#MouseOutStar4" radius="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+               <fill>
+                  <RadialGradient centerX="0.5" centerY="0.48058252427184467" focusAngle="-171.25" focusDistance="-0.024390243902439046" radius="0.3902439024390244">
+                     <stops>
+                        <Stop color="#e3d681" />
+                        <Stop color="#626f7ac0" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Circle>
+            <Circle fx:id="star511" layoutX="213.0" layoutY="131.0" onMouseClicked="#MouseClicStar555" onMouseEntered="#MouseOnStar5" onMouseExited="#MouseOutStar5" radius="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+               <fill>
+                  <RadialGradient centerX="0.47727272727272735" centerY="0.49029126213592233" focusAngle="-171.25" radius="0.524390243902439">
+                     <stops>
+                        <Stop color="#f70000" />
+                        <Stop color="#c9a048" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Circle>
+            <Label fx:id="msg11" layoutX="270.0" layoutY="229.0" prefHeight="160.0" prefWidth="498.0" textAlignment="CENTER" textFill="#dee6eb" visible="false">
+               <font>
+                  <Font name="System Bold" size="82.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Qoes_Scene" layoutX="131.0" layoutY="192.0" prefHeight="233.0" prefWidth="677.0" style="-fx-background-color: #a9a9a9; -fx-border-color: #837a4a; -fx-border-width: 10; -fx-border-radius: 15; -fx-background-radius: 18;" visible="false">
+         <children>
+            <Label layoutX="77.0" layoutY="14.0" prefHeight="99.0" prefWidth="580.0" style="-fx-border-radius: 20;" text="Is it a planet or a star?" textAlignment="CENTER" textFill="#2c6386">
+               <font>
+                  <Font name="System Bold" size="48.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#bdbb8eac" />
+               </effect>
+            </Label>
+            <ImageView fx:id="clicPlanet" fitHeight="59.0" fitWidth="68.0" layoutX="234.0" layoutY="115.0" onMouseClicked="#MouseClicPlanet">
+               <image>
+                  <Image url="@../image/planet.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="clicStar" fitHeight="67.0" fitWidth="74.0" layoutX="374.0" layoutY="110.0" onMouseClicked="#MouseClicStar">
+               <image>
+                  <Image url="@../image/starT%20(2).png" />
+               </image>
+            </ImageView>
+            <RadioButton fx:id="RadPlanet" layoutX="312.0" layoutY="134.0" mnemonicParsing="false" onMouseClicked="#MouseClicPlanet" />
+            <RadioButton fx:id="RadStar" layoutX="455.0" layoutY="134.0" mnemonicParsing="false" onMouseClicked="#MouseClicStar" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Qoes_Scene1" layoutX="141.0" layoutY="202.0" prefHeight="233.0" prefWidth="677.0" style="-fx-background-color: #a9a9a9; -fx-border-color: #837a4a; -fx-border-width: 10; -fx-border-radius: 15; -fx-background-radius: 18;" visible="false">
+         <children>
+            <Label layoutX="77.0" layoutY="14.0" prefHeight="99.0" prefWidth="580.0" style="-fx-border-radius: 20;" text="Is it a planet or a star?" textAlignment="CENTER" textFill="#2c6386">
+               <font>
+                  <Font name="System Bold" size="48.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#bdbb8eac" />
+               </effect>
+            </Label>
+            <ImageView fx:id="clicPlanet1" fitHeight="59.0" fitWidth="68.0" layoutX="234.0" layoutY="115.0" onMouseClicked="#MouseClicPlanet">
+               <image>
+                  <Image url="@../image/planet.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="clicStar1" fitHeight="67.0" fitWidth="74.0" layoutX="374.0" layoutY="110.0" onMouseClicked="#MouseClicStar">
+               <image>
+                  <Image url="@../image/starT%20(2).png" />
+               </image>
+            </ImageView>
+            <RadioButton fx:id="RadPlanet1" layoutX="312.0" layoutY="134.0" mnemonicParsing="false" onMouseClicked="#MouseClicPlanet0" />
+            <RadioButton fx:id="RadStar1" layoutX="455.0" layoutY="134.0" mnemonicParsing="false" onMouseClicked="#MouseClicStar0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Qoes_Scene2" layoutX="141.0" layoutY="202.0" prefHeight="233.0" prefWidth="677.0" style="-fx-background-color: #a9a9a9; -fx-border-color: #837a4a; -fx-border-width: 10; -fx-border-radius: 15; -fx-background-radius: 18;" visible="false">
+         <children>
+            <Label layoutX="77.0" layoutY="14.0" prefHeight="99.0" prefWidth="580.0" style="-fx-border-radius: 20;" text="Is it a planet or a star?" textAlignment="CENTER" textFill="#2c6386">
+               <font>
+                  <Font name="System Bold" size="48.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#bdbb8eac" />
+               </effect>
+            </Label>
+            <ImageView fx:id="clicPlanet2" fitHeight="59.0" fitWidth="68.0" layoutX="234.0" layoutY="115.0" onMouseClicked="#MouseClicPlanet">
+               <image>
+                  <Image url="@../image/planet.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="clicStar2" fitHeight="67.0" fitWidth="74.0" layoutX="374.0" layoutY="110.0" onMouseClicked="#MouseClicStar">
+               <image>
+                  <Image url="@../image/starT%20(2).png" />
+               </image>
+            </ImageView>
+            <RadioButton fx:id="RadPlanet2" layoutX="312.0" layoutY="134.0" mnemonicParsing="false" onMouseClicked="#MouseClicPlanet6" />
+            <RadioButton fx:id="RadStar2" layoutX="455.0" layoutY="134.0" mnemonicParsing="false" onMouseClicked="#MouseClicStar6" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="telescopeInfo" layoutX="7.0" prefHeight="586.0" prefWidth="879.0" styleClass="root" stylesheets="@background.css">
+         <children>
+            <ImageView fx:id="imageInfo" fitHeight="759.0" fitWidth="606.0" layoutX="137.0" layoutY="-187.0">
+               <image>
+                  <Image url="@../image/instraction.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="textInfo" layoutX="221.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="416.9999933782965" />
+            <ImageView fx:id="image_Start" fitHeight="77.0" fitWidth="85.0" layoutX="758.0" layoutY="476.0" onMouseClicked="#MouseClicStart" rotate="45.0">
+               <image>
+                  <Image url="@../image/rocet.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Pane fx:id="scorePane" layoutX="1.0" prefHeight="600.0" prefWidth="900.0" visible="false">
+         <children>
+            <ImageView fx:id="imageScore" fitHeight="610.0" fitWidth="461.0" layoutX="226.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/instraction.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="textScore" fill="#0a0900" layoutX="285.0" layoutY="539.0" stroke="#8a8a8a" strokeType="OUTSIDE" strokeWidth="2.0" wrappingWidth="358.000018119812">
+               <font>
+                  <Font name="Showcard Gothic" size="68.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="score1" fitHeight="86.0" fitWidth="85.0" layoutX="311.0" layoutY="381.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/star(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="score3" fitHeight="86.0" fitWidth="85.0" layoutX="516.0" layoutY="381.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/star(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="score2" fitHeight="100.0" fitWidth="100.0" layoutX="407.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/star(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="win1" fitHeight="86.0" fitWidth="85.0" layoutX="311.0" layoutY="381.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../image/star(2).png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="win3" fitHeight="86.0" fitWidth="85.0" layoutX="516.0" layoutY="381.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../image/star(2).png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="win2" fitHeight="100.0" fitWidth="100.0" layoutX="407.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../image/star(2).png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imageBack" fitHeight="77.0" fitWidth="85.0" layoutX="793.0" layoutY="493.0" onMouseClicked="#backMenu" pickOnBounds="true" preserveRatio="true" rotate="45.0">
+               <image>
+                  <Image url="@../image/rocet.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

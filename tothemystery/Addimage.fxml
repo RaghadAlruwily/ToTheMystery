@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="902.0" styleClass="root" translateX="3.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tothemystery.ImageController">
+    <stylesheets>
+        <URL value="@Style.css" />
+    </stylesheets>
+    <ImageView fx:id="duneImage" fitHeight="175.0" fitWidth="229.0" layoutX="556.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../image/planet4.png" />
+    </ImageView>
+    <ImageView fx:id="purplezoidImage" fitHeight="383.0" fitWidth="283.0" layoutX="395.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../image/pngegg(19).png" />
+    </ImageView>
+    <ImageView fx:id="saturnImage" fitWidth="100" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../image/planet3.png" />
+    </ImageView>
+    <ImageView fx:id="marsImage" fitWidth="100" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../image/mars.png" />
+    </ImageView>
+    <ImageView fx:id="neptuneImage" fitHeight="488.0" fitWidth="408.0" layoutX="105.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../image/neptune.png" />
+    </ImageView>
+    <ImageView fx:id="asteroidImage" fitHeight="650.0" fitWidth="717.0" layoutX="174.0" layoutY="533.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../image/asteroid.png" />
+    </ImageView>
+    <ImageView fx:id="rocketImage" blendMode="SOFT_LIGHT" layoutX="556.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../image/rocket.png" />
+    </ImageView>
+    <VBox fx:id="rozImage" alignment="BASELINE_CENTER" layoutX="211.0" layoutY="39.0">
+        <ImageView id="image" layoutX="-75.0" layoutY="292.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../image/roz.png" />
+        </ImageView>
+        <HBox id="text" alignment="CENTER" style="-fx-background-color: #BAA; -fx-background-radius: 0 0 10 10; -fx-padding: 3; -fx-margin: 5;">
+            <Text fill="aliceblue">Engine</Text>
+        </HBox>
+    </VBox>
+    <VBox fx:id="roboImage" layoutX="39.0" layoutY="297.0">
+        <ImageView id="image" layoutX="-128.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../image/robo.png" />
+        </ImageView>
+        <HBox id="text" alignment="CENTER" style="-fx-background-color: #BAA; -fx-background-radius: 0 0 10 10; -fx-padding: 3; -fx-margin: 5;">
+            <Text fill="aliceblue">Tank</Text>
+        </HBox>
+    </VBox>
+    <VBox fx:id="rohe0Image" alignment="CENTER" layoutX="144.0" layoutY="259.0">
+        <HBox alignment="CENTER">
+            <ImageView id="image" layoutX="65.0" layoutY="317.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../image/rohe0.png" />
+            </ImageView>
+        </HBox>
+        <HBox id="text" alignment="CENTER" style="-fx-background-color: #BAA; -fx-background-radius: 0 0 10 10; -fx-padding: 3; -fx-margin: 5;">
+            <Text fill="aliceblue">Engine</Text>
+        </HBox>
+    </VBox>
+    <VBox fx:id="roctImage" layoutX="164.0" layoutY="385.0">
+        <HBox alignment="CENTER">
+            <ImageView id="image" layoutX="40.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../image/roct.png" />
+            </ImageView>
+        </HBox>
+        <HBox id="text" alignment="CENTER" style="-fx-background-color: #BAA; -fx-background-radius: 0 0 10 10; -fx-padding: 3; -fx-margin: 5;">
+            <Text fill="aliceblue">Reaction Wheel</Text>
+        </HBox>
+    </VBox>
+    <VBox fx:id="rokheImage" layoutX="60.0" layoutY="170.0">
+        <HBox alignment="CENTER">
+            <ImageView id="image" layoutX="-175.0" layoutY="328.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../image/rokhe1.png" />
+            </ImageView>
+        </HBox>
+        <HBox id="text" alignment="CENTER" style="-fx-background-color: #BAA; -fx-background-radius: 0 0 10 10; -fx-padding: 3; -fx-margin: 5;">
+            <Text fill="aliceblue">People Box</Text>
+        </HBox>
+    </VBox>
+    <VBox fx:id="rohe2Image" layoutX="106.0" layoutY="409.0">
+        <HBox alignment="CENTER">
+            <ImageView id="image" layoutY="250.0" pickOnBounds="true" preserveRatio="true" translateX="3.0">
+                <Image url="@../image/rohe2.png" />
+            </ImageView>
+        </HBox>
+        <HBox id="text" alignment="CENTER" style="-fx-background-color: #BAA; -fx-background-radius: 0 0 10 10; -fx-padding: 3; -fx-margin: 5;">
+            <Text fill="aliceblue">Escape Sys</Text>
+        </HBox>
+    </VBox>
+   <Pane fx:id="rocketButton" layoutX="731.0" layoutY="581.0" onMouseClicked="#goToNext" onMouseEntered="#mouseOnButton" onMouseExited="#mouseOutButton" prefHeight="86.0" prefWidth="165.0">
+      <children>
+         <ImageView fitHeight="86.0" fitWidth="165.0" layoutX="40.0" pickOnBounds="true" preserveRatio="true" rotate="45.0">
+            <image>
+               <Image url="@../image/rocet.png" />
+            </image>
+         </ImageView>
+      </children>
+   </Pane>
+</Pane>

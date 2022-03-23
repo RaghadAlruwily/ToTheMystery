@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="900.0" styleClass="root" stylesheets="@login.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tothemystery.MenuController">
+   <children>
+      <AnchorPane layoutX="52.0" layoutY="53.0" opacity="0.82" prefHeight="500.0" prefWidth="550.0" style="-fx-border-radius: 20; -fx-border-width: 10; -fx-border-color: #837a4a;" styleClass="root" AnchorPane.bottomAnchor="53.0">
+         <children>
+            <Label layoutX="302.0" layoutY="29.0" prefHeight="99.0" prefWidth="201.0" style="-fx-border-radius: 20;" text="Menu" textFill="#7485ab">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="60.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#bdbb8eac" />
+               </effect>
+            </Label>
+            <ImageView fitHeight="76.0" fitWidth="72.0" layoutX="87.0" layoutY="345.0" opacity="0.49" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/galaxy.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="89.0" fitWidth="96.0" layoutX="627.0" layoutY="96.0" opacity="0.55" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/planet3.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="76.0" fitWidth="78.0" layoutX="366.0" layoutY="188.0" opacity="0.43" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/planet2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="59.0" fitWidth="72.0" layoutX="675.0" layoutY="304.0" opacity="0.49" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/galaxy.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="479.0" layoutY="96.0" opacity="0.49" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/galaxy.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="58.0" fitWidth="56.0" layoutX="81.0" layoutY="119.0" opacity="0.46" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/planet1.png" />
+               </image>
+            </ImageView>
+            <AnchorPane fx:id="rocket_pane" layoutX="71.0" layoutY="168.0" onMouseClicked="#goToRocket" onMouseEntered="#MouseOnRocketPane" onMouseExited="#MouseOutRocketPane" prefHeight="177.0" prefWidth="154.0" style="-fx-border-width: 3; -fx-border-color: #7485ab; -fx-border-radius: 3;" styleClass="root" stylesheets="@login.css">
+               <effect>
+                  <DropShadow color="#9aaab6" />
+               </effect>
+               <children>
+                  <ImageView fx:id="rocet" fitHeight="91.0" fitWidth="89.0" layoutX="14.0" layoutY="44.0" opacity="0.76" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/rocet.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="planets_pane" layoutX="302.0" layoutY="168.0" onMouseClicked="#goToPlanetsList" onMouseEntered="#MouseOnPlanetsPane" onMouseExited="#MouseOutPlanetsPane" prefHeight="177.0" prefWidth="154.0" style="-fx-border-width: 3; -fx-border-color: #7485ab; -fx-border-radius: 3;" styleClass="root" stylesheets="@login.css">
+               <effect>
+                  <DropShadow color="#9aaab6" />
+               </effect>
+               <children>
+                  <ImageView fx:id="planet1" fitHeight="67.0" fitWidth="72.0" layoutX="14.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/planet3.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="planet2" fitHeight="51.0" fitWidth="51.0" layoutX="105.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/planet1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="planet3" fitHeight="51.0" fitWidth="45.0" layoutX="50.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/planet4.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="telescope_pane" layoutX="529.0" layoutY="168.0" onMouseClicked="#goToTelescope" onMouseEntered="#MouseOnTelescopePane" onMouseExited="#MouseOutTelescopePane" prefHeight="177.0" prefWidth="154.0" style="-fx-border-width: 3; -fx-border-color: #7485ab; -fx-border-radius: 3;" styleClass="root" stylesheets="@login.css">
+               <effect>
+                  <DropShadow color="#9aaab6" />
+               </effect>
+               <children>
+                  <ImageView fx:id="telscop" fitHeight="91.0" fitWidth="89.0" layoutX="14.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/telscop.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <ImageView fx:id="image_setting" fitHeight="76.0" fitWidth="83.0" layoutX="40.0" layoutY="29.0" onMouseClicked="#settingScene" onMouseEntered="#MouseOnSetting" onMouseExited="#MouseOutSetting" opacity="0.85" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/setting.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="image" fitHeight="146.0" fitWidth="512.0" layoutX="148.0" layoutY="378.0" opacity="0.71" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/space4.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="i" fitHeight="56.0" fitWidth="45.0" layoutX="661.0" layoutY="38.0" onMouseClicked="#instrctionScene" onMouseEntered="#MouseOninstrction" onMouseExited="#MouseOutinstrction" opacity="0.82" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/i.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lb_about" layoutX="34.0" layoutY="454.0" onMouseClicked="#aboutScene" onMouseEntered="#MouseOnAbout" onMouseExited="#MouseOutAbout" prefHeight="62.0" prefWidth="251.0" style="-fx-border-radius: 20;" text="About Program" textFill="#7485ab" underline="true">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="22.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#bdbb8eab" />
+               </effect>
+            </Label>
+            <Pane fx:id="scorePane" layoutX="131.0" layoutY="16.0" onMouseClicked="#goToScore" onMouseEntered="#mouseOnScore" onMouseExited="#mouseOutScore" prefHeight="89.0" prefWidth="122.0">
+               <children>
+                  <ImageView fx:id="s1" fitHeight="76.0" fitWidth="72.0" layoutX="22.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/star(2)_1.png" />
+                     </image>
+                     <effect>
+                        <Lighting diffuseConstant="2.0" specularConstant="1.4" specularExponent="17.07" surfaceScale="0.0">
+                           <bumpInput>
+                              <Shadow>
+                                 <input>
+                                    <Blend />
+                                 </input></Shadow>
+                           </bumpInput>
+                           <light>
+                              <Light.Distant color="#fffff8" />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="s2" fitHeight="51.0" fitWidth="56.0" layoutX="33.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/star(2)_1.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="t1" fill="WHITE" layoutX="16.0" layoutY="67.0" stroke="#948a8a" strokeType="OUTSIDE" strokeWidth="2.0" text="score">
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="27.0" />
+                     </font>
+                  </Text>
+               </children>
+               <cursor>
+                  
+               </cursor>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <Label fx:id="player" layoutX="121.0" layoutY="14.0" style="-fx-border-radius: 20;" text="Player : " textFill="#7485ab">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="24.0" />
+         </font>
+         <effect>
+            <DropShadow color="#bdba8fc2" />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

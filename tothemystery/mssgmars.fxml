@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="900.0" styleClass="backgmars" stylesheets="@ss.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tothemystery.MssgControllerMars">
+   <children>
+      <ImageView fx:id="imageView" fitHeight="86.0" fitWidth="86.0" layoutX="564.0" layoutY="477.0" pickOnBounds="true" preserveRatio="true" rotate="14.9">
+         <image>
+            <Image url="@../image/astrological-2.png" />
+         </image>
+         <effect>
+            <Bloom threshold="0.61" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="ii" fitHeight="106.0" fitWidth="86.0" layoutY="538.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/astronaut-6.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

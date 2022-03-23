@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="660.0" prefWidth="900.0" styleClass="backgmars" stylesheets="@ss.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tothemystery.InfMarssGameController">
+   <children>
+      <Pane fx:id="miniWindow" layoutY="372.0" prefHeight="349.0" prefWidth="900.0" />
+      <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#252525c7" height="360.0" layoutX="2.0" layoutY="362.0" stroke="#837a4a" strokeType="INSIDE" strokeWidth="7.0" width="900.0" />
+      <Button fx:id="okButton" cache="true" contentDisplay="TEXT_ONLY" layoutX="653.0" layoutY="656.0" mnemonicParsing="false" onAction="#moveScene" style="-fx-background-color: #c9b97a; -fx-background-radius: 20;" text="ok" underline="true" />
+      <ImageView fitHeight="307.0" fitWidth="216.0" layoutX="690.0" layoutY="392.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/astronaut_1.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="textInfo" layoutX="31.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="600.6708984375" />
+   </children>
+</AnchorPane>
